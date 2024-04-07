@@ -3,9 +3,8 @@
 require_once "includes/Dbh.php";
 
 session_start();
-// $_SESSION['userId'] = 3;
+$_SESSION['userId'] = 3;
 $_SESSION['usertype'] = "admin";
-$usertype = "userdd";
 // $_SESSION['user'];
 // $_SESSION['id'];
 
@@ -28,7 +27,6 @@ $usertype = "userdd";
                 if(isset($_SESSION['userId'])){
                     require_once "canAccess/uploadFunc.ca.php";
                 }
-                echo $_SESSION['userId'];
             }
         ?>
 

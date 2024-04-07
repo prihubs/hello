@@ -1,4 +1,5 @@
 <?php
+// session_start();
 
 include_once "../includes/myFunc.inc.php";
 
@@ -23,11 +24,12 @@ Class File extends Dbh{
     private $goodSize;
 
     private $list;
-    private $userId = 3;
+    private $userId;
     private $pOrder;
 
     // CONSTRUCTION
-    public function __construct($pName, $pTitle, $pDesc, $fName, $fSize, $fErr, $fTLocation){
+    public function __construct($userId, $pName, $pTitle, $pDesc, $fName, $fSize, $fErr, $fTLocation){
+        $this->userId = $userId;
         $this->pName = $pName;
         $this->pTitle = $pTitle;
         $this->pDesc = $pDesc;
@@ -165,7 +167,7 @@ Class File extends Dbh{
 
         if ($this->Accept()){
 
-            $success = $this->userId." File Uploaded Successfully: ".$this->fDestination;
+            $success = "File Uploaded Successfully";
             return Returns($success);
 
         }else{

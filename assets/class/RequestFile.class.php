@@ -33,7 +33,7 @@ class RequestFile extends Dbh{
                 $this->pTitle = $result['pTitle'];
                 $this->pDesc = $result['pDesc'];
                 $this->fLocation = $result['fDestination'];
-                $location = "uploads/";
+                $location = "assets/uploads/";
 
                 echo'
                     <div class="imgCon">

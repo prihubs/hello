@@ -1,11 +1,13 @@
 <?php 
 
-require_once "includes/Dbh.php";
+require_once "assets/includes/Dbh.php";
 
 session_start();
 $_SESSION['userId'] = 3;
+$_SESSION['user'] = "Prince";
+
 $_SESSION['usertype'] = "admin";
-// $_SESSION['user'];
+$user = $_SESSION['user'];
 // $_SESSION['id'];
 
 ?>
@@ -16,7 +18,7 @@ $_SESSION['usertype'] = "admin";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File System</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 

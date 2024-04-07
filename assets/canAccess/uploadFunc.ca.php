@@ -1,6 +1,6 @@
 <?php
+?>
 
-echo '
 <div class="maiin">
             <div class="main sticky">
                 <div class="sec1">
@@ -9,12 +9,12 @@ echo '
                 </div>
                 <div class="space"></div>
                 <div class="messages">
-                    <?php include_once "ErrorHandler.php"; ?>
+                    <?php include_once "assets/ErrorHandler.php"; ?>
                 </div>
 
                 <div class="space"></div>
                 <div class="sec2">
-                    <form action="includes/makeFile.inc.php" method="post" enctype="multipart/form-data">
+                    <form action="assets/includes/makeFile.inc.php" method="post" enctype="multipart/form-data">
                         <h2 class="sub2">Fill in all Required feilds!</h2>
     
                         <label for="name">Enter File Name</label> <br>
@@ -34,4 +34,4 @@ echo '
                     <em class="ssub2"> Upload only jpg, png, jpeg</em>
                 </div>
             </div>
-        </div> ';
+        </div>

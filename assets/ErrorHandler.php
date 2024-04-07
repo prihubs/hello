@@ -12,7 +12,7 @@ if(isset($_GET['success'])){
     $success = $_GET['success'];
     
     echo '<div class="ssub success maxH">
-              <em>'. $success .'</em>
+              <em>'.$user.'-: Your '. $success .'</em>
           </div>';
 } 
 

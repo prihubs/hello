@@ -5,8 +5,10 @@ require_once "assets/includes/Dbh.php";
 session_start();
 $_SESSION['userId'] = 3;
 $_SESSION['user'] = "Prince";
-
 $_SESSION['usertype'] = "admin";
+
+$usertype = $_SESSION['usertype'];
+$userId = $_SESSION['userId'];
 $user = $_SESSION['user'];
 // $_SESSION['id'];
 

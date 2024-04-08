@@ -22,7 +22,7 @@
         <div class="sec3 ">
             <?php 
                 include_once "assets/gallery.php"; 
-                Gallery($_SESSION['userId']);
+                Gallery($userId, $usertype);
             ?>
         </div>
 
